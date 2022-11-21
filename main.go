@@ -9,8 +9,8 @@ import (
 
 func main() {
 	models.Personalities = []models.Personality{
-		{Name: "Name1", History: "History1"},
-		{Name: "Name2", History: "History2"},
+		{ID: 1, Name: "Name1", History: "History1"},
+		{ID: 2, Name: "Name2", History: "History2"},
 	}
 	fmt.Println("start rest api")
 	routes.HandleRequest()
